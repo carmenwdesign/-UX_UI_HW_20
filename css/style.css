@@ -1,0 +1,123 @@
+h1 h2 h3 h4 h5 h6 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 87px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+  
+  .customNav {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff !important;
+    background-size: cover;
+    z-index: 10;
+  }
+
+  .navbar-brand {
+  font-size: 14px;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+  }
+
+  .nav-item {
+    margin: 0px 20px;
+  }
+  
+  .customNav .nav-link {
+    color: black;
+    font-size: 14px;
+  }
+  
+  .navCTA {
+    font-size: 14px;
+    background-color: #0f1108;
+    color: #fcfdff;
+    border-radius: 20px;
+    border-color: transparent;
+    transition: outline 0.1s ease;
+    margin-left: 15px;
+  }
+  
+  .btn:hover {
+    outline: 3px solid #d6d2d0;
+    background-color: #0f1108;
+    outline-offset: 1px;
+    border-color: transparent;
+  }
+  
+  .dropdown-menu {
+    background-size: cover;
+  }
+  
+  .dropdown-item:focus, .dropdown-item:hover {
+      color: #16181b;
+      text-decoration: none;
+      background: #ffa946;
+  }
+  
+  .content {
+    padding: 90px 50px 0px 50px;
+  }
+  
+  .sectionHeading {
+    text-align: center;
+  }
+  
+  .showsNear {
+    padding: 0px 30px 30px 30px;
+  }
+  
+  .valueProp {
+    margin-bottom: 50px;
+    align-items: center;
+  }
+
+  .reverseRow {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .row {
+    justify-content: space-between;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+  }
+
+  .col-3 {
+    flex: 50%;
+    max-width: 100%;
+  }
+
+  .col-8 {
+    max-width: 50%;
+  }
+
+  .conclude {
+    text-align: center;
+  }
+  
+  footer {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+    margin-top: 50px;
+  } 
+  
