@@ -9,18 +9,23 @@ h1 h2 h3 h4 h5 h6 {
 
   h2 {
     font-size: 87px;
+    font-weight: bold;
   }
 
   h3 {
     font-size: 32px;
+    font-weight: bold;
   }
   
   .customNav {
     position: fixed;
-    width: 100%;
+    width: 98%;
     background-color: #ffffff !important;
     background-size: cover;
     z-index: 10;
+    margin: 10px 1% 0px 1%;
+    border-radius: 20px;
+    font-weight: bold;
   }
 
   .navbar-brand {
@@ -40,6 +45,13 @@ h1 h2 h3 h4 h5 h6 {
     color: black;
     font-size: 14px;
   }
+
+  .backgroundIMG {
+    background-image: url('../images/9621-waves.gif') !important;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
   
   .navCTA {
     font-size: 14px;
@@ -49,6 +61,7 @@ h1 h2 h3 h4 h5 h6 {
     border-color: transparent;
     transition: outline 0.1s ease;
     margin-left: 15px;
+    font-weight: bold;
   }
   
   .btn:hover {
@@ -62,22 +75,12 @@ h1 h2 h3 h4 h5 h6 {
     background-size: cover;
   }
   
-  .dropdown-item:focus, .dropdown-item:hover {
-      color: #16181b;
-      text-decoration: none;
-      background: #ffa946;
-  }
-  
   .content {
     padding: 90px 50px 0px 50px;
   }
   
   .sectionHeading {
     text-align: center;
-  }
-  
-  .showsNear {
-    padding: 0px 30px 30px 30px;
   }
   
   .valueProp {
@@ -88,7 +91,6 @@ h1 h2 h3 h4 h5 h6 {
   .reverseRow {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
   }
 
   .row {
@@ -97,11 +99,14 @@ h1 h2 h3 h4 h5 h6 {
   
   .imageContainer img {
     width: 100%;
+    max-height: auto;
   }
 
   .col-3 {
     flex: 50%;
     max-width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .col-8 {
@@ -111,13 +116,131 @@ h1 h2 h3 h4 h5 h6 {
   .conclude {
     text-align: center;
   }
+
+  .navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+  }
+
+  button:focus {
+    outline: 0px;
+    outline: 0px;
+  }
+
+footer {
+    margin-bottom: 35px;
+}
+
+.footing {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 44px;
+    margin-left: 115px;
+    margin-right: 115px;
+}
+
+footer a {
+    color: #0f1108;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+}
   
-  footer {
-    position: absolute;
+hr {
     width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #f5f5f5;
-    margin-top: 50px;
-  } 
+    height: 1px;
+    background-color: white;
+    border: none;
+  }
+
+footer .copyright {
+    margin-top: 35px;
+    font-size: 12px;
+    color: #777;
+}
+
+footer .footer-heading {
+    color: #0f1108;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 545px;
+    margin-top: 35px;
+    margin-bottom: 35px;  
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+footer .footer-link::before {
+    content: "\e5c8";
+    font-family: "Material Symbols Rounded", sans-serif;
+    font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 200, 'opsz' 24;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
   
+  @media screen and (max-width: 600px) {
+
+    .content {
+      padding: 90px 2% 0px 2%;
+      width: 96%;
+    }
+
+    .reverseRow {
+      flex-direction: column-reverse;
+    }
+  
+    .row {
+      flex-direction: column-reverse;
+    }
+
+    .col-3 {
+      flex: 100%;
+    }
+  
+    .col-8 {
+      max-width: 100%;
+      margin: 0px 20px;
+    }
+
+    .imageContainer img {
+      margin-top: 15px;
+      width: 100%;
+    }
+
+    .conclude {
+      margin: 0px 20px;
+    }
+
+    .navCTA {
+      background-color: transparent;
+      color: #0f1108;
+      border-radius: 0px;
+      margin-left: 3px;
+    }
+
+    .btn:hover {
+      outline: 0px solid transparent;
+      background-color: transparent;
+      outline-offset: 0px;
+      border-color: transparent;
+      color: #0f1108;
+    }
+    
+    .footing {
+      margin-top: 44px;
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  }
